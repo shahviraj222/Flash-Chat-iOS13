@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        let db = Firestore.firestore()
+        print(db)
+        
+//        for keyboard functionality text come above the keyboard
+        IQKeyboardManager.shared.isEnabled = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+//        touch outside keyboard shoud move aways.
+        IQKeyboardManager.shared.resignOnTouchOutside = true
         return true
     }
 
