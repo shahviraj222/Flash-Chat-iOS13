@@ -1,55 +1,31 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# 🚀 iOS Chat Application  
 
-# Flash-Chat
+A real-time **text-based** messaging app built with **Swift** and **Firebase**. This lightweight chat application enables seamless communication with real-time updates, secure authentication, and an optimized networking protocol.
 
-## Our Goal
+## 📌 Features  
+- 🔐 **User Authentication** – Secure login & registration using Firebase Auth  
+- 💬 **Real-time Messaging** – Instant text message updates with Firebase Firestore  
+- 🌐 **Networking Protocol** – Optimized API calls for efficient data transmission  
+- ⚡ **Error Handling** – Graceful handling of network failures & API responses  
+- 🎨 **Smooth UI/UX** – Built with SwiftUI/UIKit for a responsive experience  
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
-
-## What you will create
-
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
-
-## What you will learn
-
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+## 🛠 Tech Stack  
+- **Language:** Swift  
+- **Backend:** Firebase Firestore, Firebase Authentication  
+- **Networking:** Firebase API, third-party libraries  
+- **Architecture:** MVVM (Model-View-ViewModel)  
 
 
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
+## screenshot:
 
-```
+- **Welcome Screen:**
+<img width="363" alt="Screenshot 2025-03-05 at 12 12 52 PM" src="https://github.com/user-attachments/assets/18e3816a-4c01-4772-895e-89022574cb0b" />
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+- **Login Screen:**
+  <img width="372" alt="Screenshot 2025-03-05 at 12 13 05 PM" src="https://github.com/user-attachments/assets/7279d435-c3f6-4108-8bc6-4a93648e5940" />
 
-![End Banner](Documentation/readme-end-banner.png)
+- **Chat Screen:**
+  <img width="385" alt="Screenshot 2025-03-05 at 12 13 21 PM" src="https://github.com/user-attachments/assets/73a648d6-3022-411a-870e-ae75e21d1dc0" />
+
+  
+
